@@ -9,13 +9,11 @@ import NavItem from "../base/NavItem";
 const { Sider, Content } = Layout;
 
 const Sidebar = ({ children }) => {
-  const collapse = false;
 
   return (
     <Layout>
       <Sider
-        collapsed={collapse}
-        style={{ backgroundColor: "#1B2430" }}
+        style={{ backgroundColor: "#002766" }}
         className={styles.sidebar}
       >
         <div style={{ minHeight: "20vh" }}></div>
@@ -23,21 +21,18 @@ const Sidebar = ({ children }) => {
           link="/"
           title="Home"
           icon={<AiFillHome />}
-          isCollapse={collapse}
         />
         <div style={{ minHeight: "5vh" }}></div>
         <NavItem
           link="/about"
           title="About"
           icon={<BsPeopleFill />}
-          isCollapse={collapse}
         />
         <div style={{ minHeight: "5vh" }}></div>
         <NavItem
           link="/contact"
           title="Contact"
           icon={<IoMdContact />}
-          isCollapse={collapse}
         />
       </Sider>
       <Layout>
