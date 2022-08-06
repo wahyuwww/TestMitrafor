@@ -8,8 +8,8 @@ import NavItem from "../base/NavItem";
 
 const { Sider, Content } = Layout;
 
-export default function Sidebar({ children }) {
-  const collapse = false
+const Sidebar = ({ children }) => {
+  const collapse = false;
 
   return (
     <Layout>
@@ -45,4 +45,6 @@ export default function Sidebar({ children }) {
       </Layout>
     </Layout>
   );
-}
+};
+
+export default Sidebar

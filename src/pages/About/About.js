@@ -1,10 +1,11 @@
 /* eslint-disable max-len */
-import React from 'react';
+import React, { Component } from 'react'
 import styles from './about.module.css'
 import { Col, Row,  } from "antd";
 
-const About = () => {
-  return (
+export default class About extends Component {
+  render() {
+    return (
     <>
       <Row justify="center">
         <Col span={24} style={{ textAlign: "center" }}>
@@ -25,6 +26,5 @@ const About = () => {
       </Row>
     </>
   );
+  }
 }
-
-export default About

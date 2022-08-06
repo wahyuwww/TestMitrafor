@@ -4,8 +4,8 @@ import { Row, Col, Typography } from "antd";
 
 const { Title } = Typography;
 
-export default function NavItem({ link, title, icon, isCollapse }) {
-  return (
+const NavItem = ({ link, title, icon, isCollapse }) => {
+ return (
     <Link to={link}>
       <Row>
         <Col span={6} className="mt-5">
@@ -24,3 +24,5 @@ export default function NavItem({ link, title, icon, isCollapse }) {
     </Link>
   );
 }
+
+export default NavItem

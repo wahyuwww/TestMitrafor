@@ -28,6 +28,8 @@ const Detail = () => {
             style={{
               objectFit: "cover",
               borderRadius: "7px",
+              height: "50px",
+              fontSize: "22px",
             }}
           >
             Back
@@ -37,7 +39,10 @@ const Detail = () => {
           <div className={`${styles.boxOfTitle}`}>
             <h1>{getDetail.title}</h1>
           </div>
-          <p className={`${styles.textCategory}`} style={{ marginTop: "10px" }}>
+          <p
+            className={`${styles.textCategory}`}
+            style={{ marginTop: "10px", fontSize: "18px" }}
+          >
             category {">"} {getDetail.category}
           </p>
           <div className={`${styles.mainBox}`}>
@@ -47,6 +52,7 @@ const Detail = () => {
                 <span style={{ fontWeight: "bold" }}>Brand : </span>
                 {getDetail.brand}
               </p>
+              <hr />
               <p className={`${styles.stock}`}>
                 <span style={{ fontWeight: "bold" }}>Stock : </span>
                 {getDetail.stock}
@@ -59,6 +65,9 @@ const Detail = () => {
                     {getDetail.price}
                   </p>
                 </div>
+              </div>
+              <hr />
+              <div className={`${styles.priceBox}`}>
                 <div>
                   <p className={`${styles.text}`}>
                     <span style={{ fontWeight: "bold" }}>Discount : </span>
@@ -69,6 +78,7 @@ const Detail = () => {
               <hr />
               <h2 style={{ fontWeight: "bold" }}>Description : </h2>
               <p className={`${styles.text}`}>{getDetail.description}</p>
+              <hr />
             </div>
           </div>
         </div>
