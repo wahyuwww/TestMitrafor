@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-expressions */
-/* eslint-disable react/no-unstable-nested-components */
 import React, { useState, useRef, useEffect } from "react";
 import { SearchOutlined } from "@ant-design/icons";
 import { Table } from "antd";
