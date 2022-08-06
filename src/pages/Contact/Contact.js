@@ -21,7 +21,7 @@ const Contact = () => {
                     width: "200px",
                     height: "200px",
                     marginLeft: "300px",
-                    border: '2px solid white'
+                    border: "2px solid white",
                   }}
                 />
                 <h4 className={`${styles.fullname}`}>Wahyu Dwi Purwanto</h4>
@@ -40,7 +40,7 @@ const Contact = () => {
                   </a>
                   <a
                     target="_blank"
-                    href="https://www.linkedin.com/in/wahyu-dwi-purwanto/"
+                    href="https://github.com/wahyuwww"
                     rel="noreferrer"
                   >
                     <Button type="light">
